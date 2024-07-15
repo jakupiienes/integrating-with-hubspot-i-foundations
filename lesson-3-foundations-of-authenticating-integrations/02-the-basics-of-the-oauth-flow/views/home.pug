@@ -9,7 +9,7 @@ html(lang="en")
             p Your account has these cool contacts:
             ul
                 each contact in contacts
-                    li #{contact.properties.firstname.value}  #{contact.properties.lastname.value}
+                    li #{contact.properties.firstname}  #{contact.properties.lastname}
         else
             p You're not authenticated 
             p Please install me #[a(href=`${authUrl}`) here]
